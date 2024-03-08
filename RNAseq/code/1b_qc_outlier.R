@@ -79,10 +79,3 @@ WGCNA.outlier(t(regEx), outdir, 'rm2_reg')
   dev.off()
   
 
-
-
-toDel <- c('ATF4.3d.6','ATF4.3d.7','ATF4.3d.5', 'CEBPG.3d.7', "non.3d.9","non.3d.11")
-idx <- is.na(match(rownames(Cov), toDel))
-Cov <- Cov[idx,]
-Ex <- Ex[, rownames(Cov)]
-save(Ex, Cov, geneAnno, file=paste0('./rawData/filterEx.rda'))
