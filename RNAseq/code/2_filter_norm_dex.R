@@ -3,7 +3,7 @@
 
 source("./code/00_utils.R")
 
-load('./output/filterEx.rda')
+load('./data/rawEx.rda')
 outdir <- './output'
 
 # remove outliers identified from 1b_qc_outlier.R
