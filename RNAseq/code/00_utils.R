@@ -1,3 +1,10 @@
+## load R pacakges ##
+liblist <- c("edgeR", "readxl", "dplyr","fastDummies","Hmisc","corrplot",
+             "matrixStats", "ggplot2","RColorBrewer","cowplot", "ComplexHeatmap",
+             "circlize",'ggpubr')
+l <- lapply(liblist, function(x) suppressPackageStartupMessages(require(x, character.only = TRUE, quietly = FALSE)))
+
+            
 ## util functions ##
 
 scale_rows = function(x){
