@@ -1,26 +1,13 @@
 rm(list=ls())
 
-#load necessary packages
-library(edgeR)
-library(dplyr)
-library(fastDummies)
-library(Hmisc)
-library(corrplot)
-library(matrixStats)
-library(ggplot2)
-library(RColorBrewer)
-library(cowplot)
-library(ComplexHeatmap)
-library(circlize)
-
 
 source("./code/00_utils.R")
 
 ## identify covariates for regression
 
 tfs <- c('ATF3','ATF4','CHOP','CEBPG')
-load('./rawData/rawEx.rda')
-outdir <- './output'; if(!file.exists(outdir)){dir.create(outdir)}
+load('../rawEx.rda')
+outdir <- '../output'; if(!file.exists(outdir)){dir.create(outdir)}
 
 # biological covariant
 BioCov <- Cov[,c('TF','Batch','Sex'),drop=F]
