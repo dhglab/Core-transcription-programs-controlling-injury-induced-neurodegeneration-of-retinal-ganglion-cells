@@ -3,7 +3,7 @@
 
 source("./code/00_utils.R")
 
-load('./data/rawEx.rda')
+load('./output/preprocess.rda')
 outdir <- './output'
 
 # remove outliers identified from 1b_qc_outlier.R
@@ -11,9 +11,6 @@ toDel <- c('ATF4.3d.6','ATF4.3d.7','ATF4.3d.5', 'CEBPG.3d.7', "non.3d.9","non.3d
 idx <- is.na(match(rownames(Cov), toDel))
 Cov <- Cov[idx,]
 Ex <- Ex[, rownames(Cov)]
-
-COV <- cal_cov(Cov[,c(14:ncol(Cov))],outdir)
-Cov <- cbind(Cov, COV)
 
 save(Ex, Cov, geneAnno, file=paste0(outdir, '/filterEx.rda'))
 
