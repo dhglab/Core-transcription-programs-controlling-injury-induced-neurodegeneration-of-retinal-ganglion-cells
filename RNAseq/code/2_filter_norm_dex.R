@@ -23,7 +23,7 @@ Cov <- cbind(Cov, COVb)
 save(Ex, Cov, geneAnno, file=paste0(outdir, '/filterEx.rda'))
 
 ##edgeR to filter lowly-expressed genes and normalize sequencing depth
-
+Cov <- Cov %>% mutate(group = paste(TF,day,'.'))
 y <- edgeR.process(Cov, Ex, geneAnno) 
 
 normEx <- cpm(y)
