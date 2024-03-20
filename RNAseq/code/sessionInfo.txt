@@ -1,0 +1,60 @@
+sessionInfo()
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: CentOS Linux 7 (Core)
+
+Matrix products: default
+BLAS/LAPACK: /u/local/compilers/intel/2019.2/compilers_and_libraries_2019.2.187/linux/mkl/lib/intel64_lin/libmkl_gf_lp64.so
+
+Random number generation:
+ RNG:     Mersenne-Twister 
+ Normal:  Inversion 
+ Sample:  Rounding 
+ 
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] ggpubr_0.4.0         circlize_0.4.13      ComplexHeatmap_2.6.2
+ [4] cowplot_1.1.1        RColorBrewer_1.1-2   matrixStats_0.61.0  
+ [7] corrplot_0.90        Hmisc_4.6-0          ggplot2_3.3.5       
+[10] Formula_1.2-4        survival_3.1-12      lattice_0.20-41     
+[13] fastDummies_1.7.3    dplyr_1.1.0          readxl_1.3.1        
+[16] edgeR_3.32.1         limma_3.46.0        
+
+loaded via a namespace (and not attached):
+ [1] tidyr_1.3.0         splines_4.0.2       carData_3.0-4      
+ [4] stats4_4.0.2        latticeExtra_0.6-29 cellranger_1.1.0   
+ [7] pillar_1.6.2        backports_1.2.1     glue_1.6.1         
+[10] digest_0.6.27       ggsignif_0.6.3      checkmate_2.0.0    
+[13] colorspace_2.0-2    htmltools_0.5.2     Matrix_1.3-4       
+[16] pkgconfig_2.0.3     GetoptLong_1.0.5    broom_1.0.3        
+[19] haven_2.4.3         purrr_1.0.1         scales_1.1.1       
+[22] openxlsx_4.2.4      jpeg_0.1-9          rio_0.5.27         
+[25] htmlTable_2.3.0     tibble_3.1.4        generics_0.1.0     
+[28] IRanges_2.24.1      car_3.0-11          ellipsis_0.3.2     
+[31] withr_2.4.2         nnet_7.3-14         BiocGenerics_0.36.1
+[34] cli_3.6.0           magrittr_2.0.1      crayon_1.5.2       
+[37] fansi_0.5.0         forcats_0.5.1       rstatix_0.7.0      
+[40] foreign_0.8-81      Cairo_1.5-12.2      tools_4.0.2        
+[43] data.table_1.14.2   hms_1.1.2           GlobalOptions_0.1.2
+[46] lifecycle_1.0.3     stringr_1.5.0       S4Vectors_0.28.1   
+[49] munsell_0.5.0       locfit_1.5-9.4      zip_2.2.0          
+[52] cluster_2.1.0       compiler_4.0.2      rlang_1.0.6        
+[55] rstudioapi_0.13     rjson_0.2.20        htmlwidgets_1.5.4  
+[58] base64enc_0.1-3     gtable_0.3.0        abind_1.4-5        
+[61] curl_4.3.2          R6_2.5.1            gridExtra_2.3      
+[64] knitr_1.36          fastmap_1.1.0       utf8_1.2.1         
+[67] clue_0.3-59         shape_1.4.6         stringi_1.7.4      
+[70] parallel_4.0.2      Rcpp_1.0.7          vctrs_0.5.2        
+[73] rpart_4.1-15        png_0.1-7           tidyselect_1.2.0   
+[76] xfun_0.36 
