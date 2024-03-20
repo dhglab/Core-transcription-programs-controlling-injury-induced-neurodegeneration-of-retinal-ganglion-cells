@@ -13,7 +13,7 @@ idx <- is.na(match(rownames(Cov), toDel))
 Cov <- Cov[idx,]
 Ex <- Ex[, rownames(Cov)]
 
-AlignCov <- Cov[,c(14:ncol(Cov))]
+AlignCov <- Cov[,c(10:ncol(Cov))]
 AlignCov <- t(AlignCov) %>% scale_rows() %>% t()
 
 #PCA of sequencing covariates
