@@ -102,10 +102,10 @@ lm.fun <- function(Expr,expression,designvars) {
   colnames(residuals) <- colnames(Expr)
   rownames(residuals) <- rownames(gene.assoc) <- rownames(gene.assoc.post) <- rownames(Expr)
   colnames(gene.assoc) <- colnames(gene.assoc.post) <- rownames(summary(m1.post)$coefficients)
-  print(info(residuals))   ; print(info(Expr))
+  #print(info(residuals))   ; print(info(Expr))
   rownames(residuals) <- rownames(gene.assoc) <- rownames(gene.assoc.post) <- rownames(Expr)
   colnames(gene.assoc) <- colnames(gene.assoc.post) <- rownames(summary(m1.post)$coefficients)
-  print(info(residuals))   ; print(info(Expr))
+  #print(info(residuals))   ; print(info(Expr))
   
   return(list(as.data.frame(residuals), gene.assoc, gene.assoc.post))
 }
