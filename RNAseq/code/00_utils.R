@@ -6,6 +6,13 @@ l <- lapply(liblist, function(x) suppressPackageStartupMessages(require(x, chara
 
             
 ## util functions ##
+info< = function (matrix) 
+{
+    nr = min(dim(matrix)[1], 5)
+    nc = min(dim(matrix)[2], 5)
+    print(dim(matrix))
+    print(matrix[1:nr, 1:nc, drop = F])
+}
 
 scale_rows = function(x){
   m = apply(x, 1, mean, na.rm = T)
