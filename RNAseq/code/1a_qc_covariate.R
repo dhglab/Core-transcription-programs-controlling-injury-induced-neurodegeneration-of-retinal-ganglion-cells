@@ -21,7 +21,7 @@ if (dim(Cov2)[2] >0) { Dummy <- dummy_cols(Cov2); COVa <- cbind(Cov1, Dummy)}els
 }
 
 #sequencing covariant
-AlignCov <- Cov[,c(14:ncol(Cov))]
+AlignCov <- Cov[,c(10:ncol(Cov))]
 AlignCov <- t(AlignCov) %>% scale_rows() %>% t()
 
 #PCA of sequencing covariates
