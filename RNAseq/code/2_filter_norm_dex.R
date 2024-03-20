@@ -3,6 +3,7 @@
 
 source("./code/00_utils.R")
 
+tfs <- c('ATF3','ATF4','CHOP','CEBPG')
 load('./data/rawEx.rda')
 outdir <- './output'
 
@@ -23,7 +24,7 @@ Cov <- cbind(Cov, COVb)
 save(Ex, Cov, geneAnno, file=paste0(outdir, '/filterEx.rda'))
 
 ##edgeR to filter lowly-expressed genes and normalize sequencing depth
-Cov <- Cov %>% mutate(group = paste(TF,day,'.'))
+Cov <- Cov %>% mutate(group = paste(TF,day,sep='.'))
 y <- edgeR.process(Cov, Ex, geneAnno) 
 
 normEx <- cpm(y)
