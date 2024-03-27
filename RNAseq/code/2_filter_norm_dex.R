@@ -27,13 +27,6 @@ save(Ex, Cov, geneAnno, file=paste0(outdir, '/filterEx.rda'))
 Cov <- Cov %>% mutate(group = paste(TF,day,sep='.'))
 y <- edgeR.process(Cov, Ex, geneAnno) 
 
-normEx <- cpm(y)
-geneAnno <- y$gene
-Cov <- y$samples
-rownames(normEx) <- geneAnno$gene
-
-save(normEx, geneAnno, Cov,  file=paste0(outdir, '/normEx.rda'))
-
 # differential gene analysis
 
 
