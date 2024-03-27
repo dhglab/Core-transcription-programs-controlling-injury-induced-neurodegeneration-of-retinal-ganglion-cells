@@ -3,9 +3,8 @@ rm(list=ls())
 source("./code/00_utils.R")
 
 ### 1. DEGs of each TF ####
-load(file.path(dex.dir, '/DEX.rda'))
-
-DEX <- read.table(file.path(dir,'GEO','GSE190667_rna.DEX.tsv'))
+outdir <- './output'
+load(file.path(outdir, '/DEX.rda'))
 
 DEX.p <- DEX[,grep('FDR',colnames(DEX))]
 DEX.logFC <- DEX[,grep('logFC',colnames(DEX))]
