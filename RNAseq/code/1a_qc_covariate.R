@@ -6,8 +6,8 @@ source("./code/00_utils.R")
 ## identify covariates for regression
 
 tfs <- c('ATF3','ATF4','CHOP','CEBPG')
-load('../rawEx.rda')
-outdir <- '../output'; if(!file.exists(outdir)){dir.create(outdir)}
+load('./data/rawEx.rda')
+outdir <- './output'; if(!file.exists(outdir)){dir.create(outdir)}
 
 # biological covariant
 BioCov <- Cov[,c('TF','Batch','Sex'),drop=F]
