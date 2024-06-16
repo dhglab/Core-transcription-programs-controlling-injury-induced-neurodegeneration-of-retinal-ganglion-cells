@@ -4,8 +4,8 @@ rm(list=ls())
 source("./code/00_utils.R")
 
 tfs <- c('ATF3','ATF4','CHOP','CEBPG')
-load('../output/preprocess.rda')
-outdir <- '../output'
+load('./output/preprocess.rda')
+outdir <- './output'
 
 ## identify sample outliers
 # WGCNA sample connectivity absolute z score > 2
